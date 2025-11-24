@@ -1,0 +1,148 @@
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.showcase {
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: 780px;
+
+    border-radius: 32px;
+
+    font-family: InterTight, sans-serif;
+
+    pointer-events: none;
+}
+
+.showcase-button {
+    width: 40px;
+    height: inherit;
+    position: relative;
+    top: -100%;
+
+    border: none;
+    background-color: transparent;
+
+    padding: 0;
+    opacity: 0.66;
+
+    transition: 0.33s;
+}
+
+.showcase-button:hover {
+    opacity: 1;
+}
+
+.showcase-content {
+    box-sizing: border-box;
+
+    /* space for buttons */
+    padding-left: 40px;
+    padding-right: 40px;
+
+    padding-top: 40px;
+    padding-bottom: 40px; /* keep additional space for contents overview */
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: all;
+}
+
+.showcase-content-visual {
+    width: 100%;
+    height: 80%;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.showcase-content-description {
+    margin-top: 10px;
+    max-height: calc(20% - 10px);
+
+    overflow-y: auto;
+    scrollbar-color: white transparent;
+    scrollbar-width: thin;
+
+    color: white;
+
+    h1 {
+        font-weight: 200;
+        font-size: xx-large;
+        margin-top: 6px;
+        margin-bottom: 0px;
+    }
+
+    p {
+        font-size: medium;
+        margin-top: 4px;
+        margin-bottom: 0px;
+    }
+
+    img {
+        margin-top: 8px;
+        width: 100%;
+        border-radius: 8px;
+    }
+}
+
+.image-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* NAVIGATION BAR */
+
+.showcase-navbar {
+    position: absolute;
+    bottom: 0pt;
+
+    width: 100%;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.showcase-navbar-entry {
+    flex: 0 0 12px;
+    height: 12px;
+
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+    opacity: 0.5;
+
+    transition: all 0.3s;
+}
+
+.showcase-navbar-entry-current {
+    flex: 0 0 14px;
+    height: 14px;
+
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+    opacity: 1;
+
+    transition: all 0.3s;
+}

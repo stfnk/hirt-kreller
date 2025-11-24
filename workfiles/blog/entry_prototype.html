@@ -1,0 +1,43 @@
+<!doctype html>
+<meta charset="utf8" />
+<link rel="stylesheet" href="../style.css" />
+<link rel="stylesheet" href="blog.css" />
+
+<html lang="de">
+    <title>_TITLE_</title>
+    <link rel="icon" type="image/png" href="../content/fav.webp" />
+
+    <div class="topbar">
+        <a class="navbutton" href="../index.html">Home</a>
+    </div>
+
+    <body>
+        <div class="content-bg">
+            <img src="../content/bg.webp" class="bg" />
+            <br />
+            <br />
+            <br />
+            <div class="content">
+                <div class="panel blog-entry panel-background">
+                    <img class="blog-entry-header" src="_HEADER_IMAGE_"/>
+                    <div class="blog-entry-title">
+                        <p>_DATE_</p>
+                        <h1>_TITLE_</h1>
+                    </div>
+
+                    <div class="blog-content">_CONTENT_</div>
+
+                    <div class="blog-navigation">
+                        <a href="_PREV_ENTRY_URL_" style="_PREV_STYLE_"
+                            ><div class="blog-navigation-button">Älter</div></a>
+                        <!-- dummy div to ensure alignment of buttons is always correct, even if only one is visible. -->
+                        <div></div>
+                        <!-- <p style="opacity: 0.3">_TITLE_</p>  -->
+                        <a href="_NEXT_ENTRY_URL_" style="_NEXT_STYLE_"
+                            ><div class="blog-navigation-button">Neuer</div></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

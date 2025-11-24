@@ -1,0 +1,289 @@
+@font-face {
+    font-family: InterTight;
+    src: url(content/InterTight-VariableFont_wght.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: InterTight, Tahoma, sans-serif;
+
+    background-color: black;
+    color: white;
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    margin-top: 10pt;
+    margin-bottom: 0pt;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: 200;
+    margin-top: 10pt;
+    margin-bottom: 0pt;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+a {
+    color: rgb(151, 186, 151);
+    transition: 0.1s;
+}
+
+a:hover {
+    color: rgb(191, 226, 191);
+}
+
+a:visited {
+    color: rgb(91, 116, 101);
+}
+
+body {
+    margin: 0;
+}
+
+.panel-background {
+    background-color: rgba(200, 210, 200, 0.05);
+    transition: 0.5s;
+}
+
+.panel-background:hover {
+    background-color: rgba(200, 210, 200, 0.1);
+}
+
+.landing {
+    position: sticky;
+    top: 0;
+    margin-bottom: -30px;
+}
+
+.topbar {
+    z-index: 10;
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    height: 48px;
+
+    margin-bottom: -48px;
+
+    overflow: hidden;
+    background-image: linear-gradient(to right, #303628 0%, #121711 100%);
+
+    box-shadow: #161715 0px 1px 32px;
+}
+
+.navbutton {
+    margin-left: 40px;
+    font-size: large;
+    font-weight: 200;
+    line-height: 48px;
+    text-decoration: none;
+    color: white;
+
+    transition: 0.2s;
+}
+
+.navbutton:hover {
+    opacity: 1;
+}
+
+.landing-bg {
+    width: 100%;
+    min-height: 480pt;
+    object-fit: cover;
+}
+
+.landing-text {
+    font-size: xx-large;
+    position: absolute;
+    width: 100%;
+    align-self: center;
+    text-align: center;
+}
+
+.content-bg {
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    width: calc(100% - 20px);
+    max-width: 1000px;
+    min-width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel {
+    box-sizing: border-box;
+    display: inline-block; /* take over size form childen */
+    overflow: hidden;
+
+    padding: 30px;
+
+    scroll-margin-top: 100px;
+
+    z-index: 1;
+
+    position: relative; /* important! establishes a positioning context */
+
+    margin-top: 30pt;
+
+    border-radius: 32px;
+    background-color: rgba(200, 210, 200, 0.05);
+
+    transition: 0.5s;
+}
+
+.panel:hover {
+    background-color: rgba(200, 210, 200, 0.1);
+}
+
+.panel-bg-img {
+    z-index: -1;
+
+    -webkit-mask-image: linear-gradient(to right, transparent 10%, black 75%);
+    mask-image: linear-gradient(to right, transparent 10%, black 75%);
+    border-radius: inherit;
+    position: absolute;
+
+    top: -0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: right;
+}
+
+.imagegrid {
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    gap: 4px;
+
+    border-radius: 16px;
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.imagegrid-image {
+    border-radius: 2px;
+    height: 280px;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+.imagegrid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.imagegrid-image img:hover {
+    scale: 1.01;
+}
+
+.project-container {
+    margin-top: 20pt;
+    display: flex;
+    flex-wrap: wrap; /* allows items to wrap onto new lines */
+    justify-content: space-between; /* spread items to edges */
+    gap: 20px; /* minimum spacing between items */
+}
+
+.project {
+    flex: 1 0 300px;
+    height: 310px;
+
+    box-sizing: border-box;
+    padding: 20px;
+
+    text-align: center;
+    background-color: rgba(200, 210, 200, 0.05);
+    border-radius: 16px;
+    position: relative;
+
+    transition: 0.3s;
+}
+
+.project:hover {
+    background-color: rgba(200, 210, 200, 0.15);
+    padding: 17px;
+}
+
+.project img {
+    width: 100%;
+    height: 70%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.project h3 {
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    margin-top: 4px;
+}
+
+.project p {
+    width: 90%;
+    margin-top: 0pt;
+    font-size: smaller;
+    opacity: 0.66;
+}
+
+.project-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.about-button {
+    display: inline-block;
+    width: 160px;
+
+    margin-top: 20px;
+    padding: 25px;
+
+    background-color: rgba(200, 210, 200, 0.05);
+    border-radius: 16px;
+
+    border: none;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    font-size: 1.5rem;
+
+    transition: 0.4s;
+}
+
+.about-button:hover {
+    font-weight: 300;
+    padding-right: 45px;
+    background-color: rgba(200, 210, 200, 0.15);
+}
