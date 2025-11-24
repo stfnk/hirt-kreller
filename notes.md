@@ -1,7 +1,3 @@
-## Optimize Workflow
-Write a `publish.py` python script to convert blog entries to showcase & properly connect previous & next pages.
-
-Steps that script should take:
-1. fetch all blog entries from their corresponding folders
-2. insert the entries into a unified blog_entry_prototype.html page
-3. for each entry also populate the index.html showcase with subset
+## Publishing
+Run `publish.py` python script to convert blog entries from custom markdown to proper html using `blog/entry_prototype.html`. For now this script performs various steps to move all relevant files from workfiles to publish folder. 
+Additionally to generating blog entry html pages and connecting Prev + Next buttons it also injects and links entries into the showcase panel on the main page.

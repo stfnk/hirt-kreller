@@ -7,8 +7,17 @@ html {
     scroll-behavior: smooth;
     font-family: InterTight, Tahoma, sans-serif;
 
-    background-color: black;
+    background-color: rgb(32,44,38);
     color: white;
+
+    font-size: 1.1rem;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 0.9rem; /* Slightly larger font on smaller screens */
+  }
 }
 
 h2 {
@@ -28,13 +37,8 @@ h3 {
 h4 {
     font-size: 1.3rem;
     font-weight: 200;
-    margin-top: 10pt;
-    margin-bottom: 0pt;
-}
-
-p {
-    font-size: 1.1rem;
-    font-weight: 300;
+    margin-top: 26pt;
+    margin-bottom: 8pt;
 }
 
 a {
@@ -47,7 +51,7 @@ a:hover {
 }
 
 a:visited {
-    color: rgb(91, 116, 101);
+    color: rgb(191, 226, 191);
 }
 
 body {
@@ -60,13 +64,11 @@ body {
 }
 
 .panel-background:hover {
-    background-color: rgba(200, 210, 200, 0.1);
+    background-color: rgba(200, 210, 200, 0.08);
 }
 
-.landing {
-    position: sticky;
-    top: 0;
-    margin-bottom: -30px;
+.panel-inner-border {
+    border-radius: 24px;
 }
 
 .topbar {
@@ -100,18 +102,36 @@ body {
     opacity: 1;
 }
 
-.landing-bg {
-    width: 100%;
-    min-height: 480pt;
-    object-fit: cover;
-}
+.landing {
+    position: sticky;
+    top: 0;
+    margin-bottom: -30px;
 
-.landing-text {
-    font-size: xx-large;
-    position: absolute;
-    width: 100%;
-    align-self: center;
-    text-align: center;
+    .landing-bg {
+        width: 100%;
+        min-height: 480pt;
+        object-fit: cover;
+    }
+
+    .landing-text {
+        /* align landing text centered on video */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        position: absolute;
+        width: calc(100% - 24px);
+        left: 12px;
+
+        height: 100%;
+
+        p {
+            margin: 0;
+            font-weight: 200;
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
 }
 
 .content-bg {
@@ -127,7 +147,6 @@ body {
 .content {
     width: calc(100% - 20px);
     max-width: 1000px;
-    min-width: 150px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -151,6 +170,12 @@ body {
     background-color: rgba(200, 210, 200, 0.05);
 
     transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  .panel {
+      padding: 10px;
+  }
 }
 
 .panel:hover {
@@ -180,8 +205,6 @@ body {
     flex-wrap: wrap;
     gap: 4px;
 
-    border-radius: 16px;
-
     width: 100%;
 
     overflow: hidden;
@@ -192,6 +215,12 @@ body {
     height: 280px;
     flex: 1 1 auto;
     overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .imagegrid-image {
+        height: 180px;
+    }
 }
 
 .imagegrid-image img {

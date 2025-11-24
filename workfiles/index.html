@@ -4,6 +4,7 @@
 <html lang="de">
     <title>Hirt und Kreller</title>
     <link rel="icon" type="image/png" href="content/fav.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <div class="topbar">
         <a class="navbutton" href="#current">Aktuell</a>
@@ -13,14 +14,11 @@
 
     <body>
         <div class="landing">
-            <p class="landing-text">
-                <b style="font-weight: 600; font-size: larger">
-                    Hi! Wir sind Luna Hirt und Stefan Kreller</b
-                >
-                <br />
-                <b style="font-weight: 200"> zwei Filmemacher aus Kassel </b>
-            </p>
-            <video loop autoplay muted class="landing-bg">
+            <div class="landing-text">
+                <p><b style="font-weight: 500;">Hi! Wir sind Luna Hirt und Stefan Kreller</b></p>
+                <p>zwei Filmemacher aus Kassel</p>
+            </div>
+            <video loop autoplay muted playsinline class="landing-bg">
                 <source src="content/trailer.mp4" type="video/mp4" />
             </video>
         </div>
@@ -41,12 +39,12 @@
                         >, einen vermutlich durch den Tierhandel aus Asien eingeschleppten Hautpilz, ausgesetzt
                         sind.
                     </p>
-                    <h4 style="text-align: right">Aktuelle Beiträge</h4>
+                    <h4 style="text-align: right;">Aktuelle Beiträge</h4>
 
 
                     <!-- SHOWCASE /-->
 
-                    <div class="showcase panel-background" >
+                    <div class="showcase panel-background panel-inner-border" >
                         <link rel="stylesheet" href="showcase.css" />
                         <script src="showcase.js"></script>
 
@@ -111,7 +109,7 @@
                         Unsere Dokumentation entsteht in Zusammenarbeit mit dem Artenschutzprojekt <a href="https://feuersalamander.info">Feuersalamander Hessen</a>.
                     </p>
 
-                    <div class="imagegrid">
+                    <div class="imagegrid panel-inner-border">
                         <div class="imagegrid-image">
                             <img src="content/images/still_01.webp" />
                         </div>
