@@ -45,8 +45,8 @@
 .showcase-button {
     width: 40px;
     height: inherit;
-    position: relative;
-    top: -100%;
+    position: absolute;
+    top: 0;
 
     border: none;
     background-color: transparent;
