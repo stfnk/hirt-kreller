@@ -26,6 +26,7 @@ static_files = [
 static_directories = [
     "content",
     "blog/content",
+    "projects",
 ]
 
 def extract_blog_data(html_file):
