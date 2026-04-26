@@ -14,6 +14,7 @@ publish_dir = "publish/"
 
 static_files = [
     "index.html",
+    "impressum.html",
     "luna_hirt.html",
     "stefan_kreller.html",
     "style.css",
