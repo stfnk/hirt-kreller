@@ -207,7 +207,7 @@ body {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 12px;
 
     width: 100%;
 

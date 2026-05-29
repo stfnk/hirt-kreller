@@ -20,6 +20,8 @@
     display: block;
     position: relative;
 
+    overflow: hidden;
+
     width: 100%;
     height: 780px;
 
@@ -43,6 +45,7 @@
 }
 
 .showcase-button {
+    cursor: pointer;
     width: 40px;
     height: inherit;
     position: absolute;
@@ -66,17 +69,19 @@
 .showcase-content {
     box-sizing: border-box;
 
+    width: 100%;
+    height: 100%;
+
+    pointer-events: all;
+}
+
+.showcase-content-gap {
     /* space for buttons */
     padding-left: 40px;
     padding-right: 40px;
 
     padding-top: 40px;
     padding-bottom: 40px; /* keep additional space for contents overview */
-
-    width: 100%;
-    height: 100%;
-
-    pointer-events: all;
 }
 
 .showcase-content-visual {
@@ -141,6 +146,8 @@
 }
 
 .showcase-navbar-entry {
+    cursor: pointer;
+
     flex: 0 0 12px;
     height: 12px;
 
